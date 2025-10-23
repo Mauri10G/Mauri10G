@@ -30,9 +30,6 @@ Mi stack principal y las tecnologías que estoy explorando:
 
 ---
 
-## 🚀 Proyectos Destacados
-
-*(¡Asegúrate de añadir los enlaces a tus repositorios cuando estén listos!)*
 
 ### 1. Plataforma Estudiantil
 * **Descripción:** Proyecto enfocado en la gestión y consulta de información para estudiantes.
