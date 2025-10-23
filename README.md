@@ -65,4 +65,4 @@ Actualmente estoy enfocado en mejorar mis habilidades en:
 Puedes encontrarme en:
 
 * **📧 Email:** [mauriguevara12@gmail.com](mailto:mauriguevara12@gmail.com)
-* **💼 LinkedIn:** `[Pega tu enlace de LinkedIn aquí]`
+* **📞 Telefono:** 0987714718
