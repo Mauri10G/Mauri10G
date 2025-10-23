@@ -1,16 +1,26 @@
-## Hi there 👋
+// ...existing code...
+# Oscar Mauricio Guevara López
 
-<!--
-**Mauri10G/Mauri10G** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Soy Oscar Mauricio Guevara López, nacido el 24/02/2006. Vivo en el cantón Cevallos, provincia de Tungurahua, Ecuador.
 
-Here are some ideas to get you started:
+## Educación
+- Estudiante en la Universidad Técnica de Ambato  
+  Facultad de Ingeniería en Sistemas, Electrónica e Industrial — carrera de Software.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Habilidades técnicas
+- Frontend: HTML, CSS, JavaScript, React (experiencia práctica).  
+- Backend: Node.js.  
+- UX/UI: familiaridad con diseño de interfaces y experiencia de usuario.  
+- En aprendizaje: TypeScript, Next.js, testing, despliegue (Docker / CI-CD).
+
+## Proyectos destacados
+- Plataforma estudiantil — proyecto de gestión/consulta para estudiantes.  
+- Plataforma de seguros — sistema para gestión y administración de seguros.
+
+## Sobre mí
+- Interés principal en desarrollo frontend y diseño UX/UI.  
+- Busco mejorar en arquitecturas modernas, buenas prácticas y despliegue de aplicaciones.
+
+## Qué puedes añadir para mejorar el perfil de GitHub
+- Correo: mauriguevara12@gmail.com
+
