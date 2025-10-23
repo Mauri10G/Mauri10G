@@ -1,23 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
-  <!-- fondo transparente -->
-  <rect width="100%" height="100%" fill="transparent"/>
-
-  <!-- gafas -->
-  <g stroke="#111111" stroke-width="8" stroke-linecap="round" fill="none">
-    <circle cx="120" cy="110" r="48"/>
-    <circle cx="280" cy="110" r="48"/>
-    <line x1="168" y1="110" x2="232" y2="110"/>
-    <line x1="80" y1="110" x2="48" y2="96" stroke-width="6"/>
-    <line x1="320" y1="110" x2="352" y2="96" stroke-width="6"/>
+  <g stroke="#333333" stroke-width="6" stroke-linecap="round" fill="none">
+    <circle cx="120" cy="110" r="48" fill="#e0e0e0" stroke="none">
+        <animate attributeName="fill" from="#e0e0e0" to="#cccccc" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="280" cy="110" r="48" fill="#e0e0e0" stroke="none">
+        <animate attributeName="fill" from="#e0e0e0" to="#cccccc" dur="3s" begin="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="120" cy="110" r="48" stroke="#111111" fill="none" />
+    <circle cx="280" cy="110" r="48" stroke="#111111" fill="none" />
+    
+    <line x1="168" y1="110" x2="232" y2="110" stroke="#111111" stroke-width="5"/>
+    
+    <path d="M80 110 C 60 100, 50 90, 40 95" stroke="#111111" stroke-width="4" fill="none"/>
+    <path d="M320 110 C 340 100, 350 90, 360 95" stroke="#111111" stroke-width="4" fill="none"/>
   </g>
 
-  <!-- rayo (scar) -->
-  <path d="M200 30 L220 70 L195 70 L230 120" stroke="#f7d117" stroke-width="8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M200 30 L220 70 L195 70 L230 120" stroke="#f79e17" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M200 30 L220 70 L195 70 L230 120" stroke="url(#lightningGradient)" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M200 30 L220 70 L195 70 L230 120" stroke="#f79e17" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <defs>
+    <linearGradient id="lightningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7d117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6f00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 
-  <!-- varita (estilizada) -->
   <g transform="rotate(-18 300 160)">
     <rect x="240" y="150" width="110" height="10" rx="5" fill="#5b3a29"/>
     <rect x="235" y="149" width="10" height="12" rx="2" fill="#b8864b"/>
+    <rect x="230" y="151" width="5" height="8" rx="1" fill="#8B4513"/> <polygon points="355,155 360,150 365,155 360,160" fill="#FFD700" stroke="#FFA500" stroke-width="1">
+        <animateTransform 
+            attributeName="transform"
+            attributeType="XML"
+            type="rotate"
+            from="0 360 155"
+            to="360 360 155"
+            dur="10s"
+            repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
+    </polygon>
   </g>
 </svg>
