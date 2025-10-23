@@ -1,48 +1,68 @@
-# Oscar Mauricio Guevara López
+<p align="center">
+  <img src="ilustracion.svg" alt="Ilustración de perfil de Oscar Guevara" width="400"/>
+</p>
 
-Soy Oscar Mauricio Guevara López, nacido el 24/02/2006. Vivo en el cantón Cevallos, provincia de Tungurahua, Ecuador.
+<h1 align="center">Hola! 👋 Soy Oscar Guevara</h1>
+<h3 align="center">Estudiante de Ing. de Software | Desarrollador Frontend | Entusiasta UX/UI</h3>
 
+<br>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
-  <!-- fondo transparente -->
-  <rect width="100%" height="100%" fill="transparent"/>
+Soy un desarrollador de software de Ecuador 🇪🇨, actualmente estudiando en la **Universidad Técnica de Ambato**. Mi pasión es crear interfaces de usuario intuitivas y atractivas, combinando el diseño UX/UI con un código frontend limpio y eficiente.
 
-  <!-- gafas -->
-  <g stroke="#111111" stroke-width="8" stroke-linecap="round" fill="none">
-    <circle cx="120" cy="110" r="48"/>
-    <circle cx="280" cy="110" r="48"/>
-    <line x1="168" y1="110" x2="232" y2="110"/>
-    <line x1="80" y1="110" x2="48" y2="96" stroke-width="6"/>
-    <line x1="320" y1="110" x2="352" y2="96" stroke-width="6"/>
-  </g>
+(¡Y sí, la ilustración de arriba es una referencia a que me gusta Harry Potter! ⚡)
 
-  <!-- rayo (scar) -->
-  <path d="M200 30 L220 70 L195 70 L230 120" stroke="#f7d117" stroke-width="8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M200 30 L220 70 L195 70 L230 120" stroke="#f79e17" stroke-width="3" fill="none" opacity="0.6"/>
+<br>
 
-  <!-- varita (estilizada) -->
-  <g transform="rotate(-18 300 160)">
-    <rect x="240" y="150" width="110" height="10" rx="5" fill="#5b3a29"/>
-    <rect x="235" y="149" width="10" height="12" rx="2" fill="#b8864b"/>
-  </g>
-</svg>
+---
 
-## Educación
-- Estudiante en la Universidad Técnica de Ambato  
-  Facultad de Ingeniería en Sistemas, Electrónica e Industrial — carrera de Software.
+## 🛠️ Tecnologías y Herramientas
 
-## Habilidades técnicas
-- Frontend: HTML, CSS, JavaScript, React (experiencia práctica).  
-- Backend: Node.js.  
-- UX/UI: familiaridad con diseño de interfaces y experiencia de usuario.  
-- En aprendizaje: TypeScript, Next.js, testing, despliegue (Docker / CI-CD).
+Mi stack principal y las tecnologías que estoy explorando:
 
-## Proyectos destacados
-- Plataforma estudiantil — proyecto de gestión/consulta para estudiantes.  
-- Plataforma de seguros — sistema para gestión y administración de seguros.
+| Área | Tecnologías |
+| :--- | :--- |
+| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black) |
+| **Backend** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) |
+| **UX/UI** | ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) *(familiaridad)* |
+| **Aprendiendo** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
 
-## Sobre mí
-- Interés principal en desarrollo frontend y diseño UX/UI.  
-- Busco mejorar en arquitecturas modernas, buenas prácticas y despliegue de aplicaciones.
-- Correo: mauriguevara12@gmail.com
+<br>
 
+---
+
+## 🚀 Proyectos Destacados
+
+*(¡Asegúrate de añadir los enlaces a tus repositorios cuando estén listos!)*
+
+### 1. Plataforma Estudiantil
+* **Descripción:** Proyecto enfocado en la gestión y consulta de información para estudiantes.
+* **Tecnologías:** `React`, `Node.js`, `CSS`
+* **Enlace:** `[Próximamente]`
+
+### 2. Plataforma de Seguros
+* **Descripción:** Sistema para la administración y gestión de pólizas de seguros.
+* **Tecnologías:** `React`, `Node.js`, `JavaScript`
+* **Enlace:** `[Próximamente]`
+
+<br>
+
+---
+
+## 🌱 Mis Metas
+
+Actualmente estoy enfocado en mejorar mis habilidades en:
+* Arquitecturas de software modernas y escalables.
+* Buenas prácticas de desarrollo (Clean Code, SOLID).
+* Procesos de despliegue y CI/CD (Docker, Jenkins, GitHub Actions).
+* Metodologías de testing (Jest, React Testing Library).
+
+<br>
+
+---
+
+## 📫 Contacto
+
+Puedes encontrarme en:
+
+* **📧 Email:** [mauriguevara12@gmail.com](mailto:mauriguevara12@gmail.com)
+* **💼 LinkedIn:** `[Pega tu enlace de LinkedIn aquí]`
