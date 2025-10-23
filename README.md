@@ -1,4 +1,3 @@
-// ...existing code...
 # Oscar Mauricio Guevara López
 
 Soy Oscar Mauricio Guevara López, nacido el 24/02/2006. Vivo en el cantón Cevallos, provincia de Tungurahua, Ecuador.
