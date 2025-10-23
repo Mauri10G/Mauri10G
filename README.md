@@ -7,7 +7,8 @@
 
 <br>
 
-Soy un desarrollador de software de Ecuador 🇪🇨, actualmente estudiando en la **Universidad Técnica de Ambato**. Mi pasión es crear interfaces de usuario intuitivas y atractivas, combinando el diseño UX/UI con un código frontend limpio y eficiente.
+Soy un desarrollador de software de Ecuador 🇪🇨, actualmente estudiando en la **Universidad Técnica de Ambato**.  
+Mi pasión es crear interfaces de usuario intuitivas y atractivas, combinando el diseño UX/UI con un código frontend limpio y eficiente.
 
 (¡Y sí, la ilustración de arriba es una referencia a que me gusta Harry Potter! ⚡)
 
@@ -30,6 +31,7 @@ Mi stack principal y las tecnologías que estoy explorando:
 
 ---
 
+## 💼 Proyectos Destacados
 
 ### 1. Plataforma Estudiantil
 * **Descripción:** Proyecto enfocado en la gestión y consulta de información para estudiantes.
@@ -38,6 +40,18 @@ Mi stack principal y las tecnologías que estoy explorando:
 ### 2. Plataforma de Seguros
 * **Descripción:** Sistema para la administración y gestión de pólizas de seguros.
 * **Tecnologías:** `React`, `Node.js`, `JavaScript`
+
+<br>
+
+---
+
+## 🔗 Repositorios en los que he trabajado
+
+| Proyecto | Descripción | Enlace |
+| :--- | :--- | :--- |
+| **Productos** | Aplicación CRUD desarrollada en equipo para la gestión de productos. | [🔗 Ver repositorio](https://github.com/jonathan-jiron/Productos.git) |
+| **Plataforma de Seguros** | Sistema web para la administración de pólizas, clientes y pagos. | [🔗 Ver repositorio](https://github.com/MateoAuz/PlataformaSeguros.git) |
+| **Tower Defense** | Videojuego tipo Tower Defense implementado en Python con Pygame. | [🔗 Ver repositorio](https://github.com/MateoAuz/TowerDefense.git) |
 
 <br>
 
@@ -60,4 +74,4 @@ Actualmente estoy enfocado en mejorar mis habilidades en:
 Puedes encontrarme en:
 
 * **📧 Email:** [mauriguevara12@gmail.com](mailto:mauriguevara12@gmail.com)
-* **📞 Telefono:** 0987714718
+* **📞 Teléfono:** 0987714718
