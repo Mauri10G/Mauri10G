@@ -1,43 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
-  <g stroke="#333333" stroke-width="6" stroke-linecap="round" fill="none">
-    <circle cx="120" cy="110" r="48" fill="#e0e0e0" stroke="none">
-        <animate attributeName="fill" from="#e0e0e0" to="#cccccc" dur="3s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="280" cy="110" r="48" fill="#e0e0e0" stroke="none">
-        <animate attributeName="fill" from="#e0e0e0" to="#cccccc" dur="3s" begin="1s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="120" cy="110" r="48" stroke="#111111" fill="none" />
-    <circle cx="280" cy="110" r="48" stroke="#111111" fill="none" />
-    
-    <line x1="168" y1="110" x2="232" y2="110" stroke="#111111" stroke-width="5"/>
-    
-    <path d="M80 110 C 60 100, 50 90, 40 95" stroke="#111111" stroke-width="4" fill="none"/>
-    <path d="M320 110 C 340 100, 350 90, 360 95" stroke="#111111" stroke-width="4" fill="none"/>
+<svg xmlns="http://www.w.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <style>
+    /* Estilos por defecto (Modo Claro) 
+    */
+    .marco, .puente, .patilla {
+      stroke: #111111; /* Negro */
+      stroke-width: 8;
+      stroke-linecap: round;
+      fill: none;
+    }
+    .lente {
+      fill: #f0f0f0; /* Lente gris claro */
+      stroke: #111111;
+      stroke-width: 8;
+    }
+    .varita {
+      fill: #5b3a29; /* Madera oscura */
+    }
+    .varita-mango {
+      fill: #b8864b; /* Mango dorado */
+    }
+    .rayo-principal {
+      stroke: #f7d117;
+      stroke-width: 8;
+      fill: none;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    .rayo-secundario {
+      stroke: #f79e17;
+      stroke-width: 3;
+      fill: none;
+      opacity: 0.6;
+    }
+  
+    /* Estilos para Modo Oscuro 
+    */
+    @media (prefers-color-scheme: dark) {
+      .marco, .puente, .patilla {
+        stroke: #E0E0E0; /* Marco gris claro */
+      }
+      .lente {
+        fill: #333333; /* Lente oscuro */
+        stroke: #E0E0E0;
+      }
+      .varita {
+        fill: #D2B48C; /* Madera clara (Tan) */
+      }
+      .varita-mango {
+        fill: #F0E68C; /* Mango dorado claro (Khaki) */
+      }
+      /* Los colores del rayo no necesitan cambiar */
+    }
+  </style>
+
+  <g>
+    <circle class="lente" cx="120" cy="110" r="48"/>
+    <circle class="lente" cx="280" cy="110" r="48"/>
+    <circle class="marco" cx="120" cy="110" r="48"/>
+    <circle class="marco" cx="280" cy="110" r="48"/>
+    <line class="puente" x1="168" y1="110" x2="232" y2="110"/>
+    <line class="patilla" x1="80" y1="110" x2="48" y2="96" stroke-width="6"/>
+    <line class="patilla" x1="320" y1="110" x2="352" y2="96" stroke-width="6"/>
   </g>
 
-  <path d="M200 30 L220 70 L195 70 L230 120" stroke="url(#lightningGradient)" stroke-width="7" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M200 30 L220 70 L195 70 L230 120" stroke="#f79e17" stroke-width="2" fill="none" opacity="0.6"/>
-  
-  <defs>
-    <linearGradient id="lightningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f7d117;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ff6f00;stop-opacity:1" />
-    </linearGradient>
-  </defs>
+  <g>
+    <path class="rayo-principal" d="M200 30 L220 70 L195 70 L230 120"/>
+    <path class="rayo-secundario" d="M200 30 L220 70 L195 70 L230 120"/>
+  </g>
 
   <g transform="rotate(-18 300 160)">
-    <rect x="240" y="150" width="110" height="10" rx="5" fill="#5b3a29"/>
-    <rect x="235" y="149" width="10" height="12" rx="2" fill="#b8864b"/>
-    <rect x="230" y="151" width="5" height="8" rx="1" fill="#8B4513"/> <polygon points="355,155 360,150 365,155 360,160" fill="#FFD700" stroke="#FFA500" stroke-width="1">
-        <animateTransform 
-            attributeName="transform"
-            attributeType="XML"
-            type="rotate"
-            from="0 360 155"
-            to="360 360 155"
-            dur="10s"
-            repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
-    </polygon>
+    <rect class="varita" x="240" y="150" width="110" height="10" rx="5"/>
+    <rect class="varita-mango" x="235" y="149" width="10" height="12" rx="2"/>
   </g>
 </svg>
