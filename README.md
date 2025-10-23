@@ -37,12 +37,10 @@ Mi stack principal y las tecnologías que estoy explorando:
 ### 1. Plataforma Estudiantil
 * **Descripción:** Proyecto enfocado en la gestión y consulta de información para estudiantes.
 * **Tecnologías:** `React`, `Node.js`, `CSS`
-* **Enlace:** `[Próximamente]`
 
 ### 2. Plataforma de Seguros
 * **Descripción:** Sistema para la administración y gestión de pólizas de seguros.
 * **Tecnologías:** `React`, `Node.js`, `JavaScript`
-* **Enlace:** `[Próximamente]`
 
 <br>
 
