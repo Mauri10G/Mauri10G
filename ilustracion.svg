@@ -1,26 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420">
   <defs>
-    <!-- Degradados -->
+    <!-- Gradientes -->
     <linearGradient id="scarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffe86b"/>
-      <stop offset="50%" stop-color="#f7c62f"/>
-      <stop offset="100%" stop-color="#ff8f1f"/>
+      <stop offset="0%" stop-color="#fff2a8"/>
+      <stop offset="50%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#ff9f1c"/>
     </linearGradient>
 
     <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#b77a45"/>
-      <stop offset="50%" stop-color="#6f472d"/>
-      <stop offset="100%" stop-color="#3f2619"/>
+      <stop offset="0%" stop-color="#c6905a"/>
+      <stop offset="50%" stop-color="#7c4a2f"/>
+      <stop offset="100%" stop-color="#3d2418"/>
     </linearGradient>
 
-    <radialGradient id="magicGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fff3b0" stop-opacity="0.95"/>
-      <stop offset="50%" stop-color="#f7d117" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#f7d117" stop-opacity="0"/>
+    <linearGradient id="codeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#61dafb"/>
+      <stop offset="100%" stop-color="#8affc1"/>
+    </linearGradient>
+
+    <radialGradient id="magicHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe58a" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#f7c948" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f7c948" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Filtros -->
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -28,94 +33,207 @@
       </feMerge>
     </filter>
 
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.28"/>
+    <filter id="bigGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
 
-    <!-- Estrella -->
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- Chispa -->
     <symbol id="spark" viewBox="-20 -20 40 40">
-      <path d="M0,-14 L3,-3 L14,0 L3,3 L0,14 L-3,3 L-14,0 L-3,-3 Z"
-            fill="#ffd95a" opacity="0.95"/>
+      <path d="M0,-14 L3,-3 L14,0 L3,3 L0,14 L-3,3 L-14,0 L-3,-3 Z" fill="#ffd95a"/>
     </symbol>
+
+    <!-- Ruta de magia -->
+    <path id="magicPath" d="M790 190 C845 150, 910 138, 1000 150 C1065 160, 1110 145, 1150 130" />
   </defs>
 
   <!-- Fondo transparente -->
   <rect width="100%" height="100%" fill="transparent"/>
 
-  <!-- Neblina mágica suave -->
-  <ellipse cx="400" cy="155" rx="230" ry="80" fill="url(#magicGlow)" opacity="0.35"/>
-  <ellipse cx="620" cy="210" rx="120" ry="55" fill="url(#magicGlow)" opacity="0.22"/>
+  <!-- Halo mágico central -->
+  <ellipse cx="600" cy="155" rx="240" ry="90" fill="url(#magicHalo)" opacity="0.45" filter="url(#bigGlow)">
+    <animate attributeName="opacity" values="0.25;0.5;0.25" dur="4.5s" repeatCount="indefinite"/>
+  </ellipse>
 
-  <!-- Chispas mágicas -->
-  <g filter="url(#softGlow)">
-    <use href="#spark" x="110" y="55" width="18" height="18"/>
-    <use href="#spark" x="175" y="38" width="12" height="12" opacity="0.7"/>
-    <use href="#spark" x="640" y="72" width="16" height="16"/>
-    <use href="#spark" x="705" y="110" width="10" height="10" opacity="0.75"/>
-    <use href="#spark" x="595" y="222" width="14" height="14"/>
-    <circle cx="150" cy="210" r="3" fill="#ffe27a"/>
-    <circle cx="668" cy="188" r="2.8" fill="#ffe27a"/>
-    <circle cx="246" cy="72" r="2.5" fill="#fff2aa"/>
-    <circle cx="565" cy="96" r="2.5" fill="#fff2aa"/>
+  <!-- Código flotando -->
+  <g font-family="monospace" font-size="26" fill="url(#codeGlow)" opacity="0.7" filter="url(#softGlow)">
+    <text x="155" y="120">&lt;/&gt;
+      <animate attributeName="y" values="120;108;120" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="1000" y="115">{ }
+      <animate attributeName="y" values="115;102;115" dur="4.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.8;0.35" dur="4.8s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="180" y="210">git
+      <animate attributeName="y" values="210;198;210" dur="5.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.30;0.70;0.30" dur="5.2s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="965" y="215">npm
+      <animate attributeName="y" values="215;204;215" dur="5.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.75;0.35" dur="5.6s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="285" y="72">const
+      <animate attributeName="y" values="72;58;72" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.65;0.25" dur="6s" repeatCount="indefinite"/>
+    </text>
+
+    <text x="860" y="72">class WizardDev
+      <animate attributeName="y" values="72;58;72" dur="6.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="6.4s" repeatCount="indefinite"/>
+    </text>
   </g>
 
-  <!-- Cicatriz -->
-  <g filter="url(#softGlow)">
-    <path d="M392 42 L425 98 L390 98 L446 178"
-          fill="none"
-          stroke="url(#scarGradient)"
-          stroke-width="14"
-          stroke-linejoin="round"
-          stroke-linecap="round"/>
-    <path d="M392 42 L425 98 L390 98 L446 178"
-          fill="none"
-          stroke="#fff1a8"
-          stroke-width="4"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          opacity="0.65"/>
-  </g>
+  <!-- Grupo central con flotación -->
+  <g filter="url(#shadow)">
+    <animateTransform attributeName="transform"
+      type="translate"
+      values="0 0; 0 -4; 0 0; 0 4; 0 0"
+      dur="7s"
+      repeatCount="indefinite"/>
 
-  <!-- Gafas -->
-  <g filter="url(#shadow)" stroke="#111111" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Cristales -->
-    <circle cx="250" cy="165" r="72" stroke-width="10"/>
-    <circle cx="550" cy="165" r="72" stroke-width="10"/>
+    <!-- Gafas -->
+    <g stroke="#0d0d0d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="470" cy="155" r="52" stroke-width="9"/>
+      <circle cx="730" cy="155" r="52" stroke-width="9"/>
+      <path d="M522 155 Q600 136 678 155" stroke-width="9"/>
+      <path d="M418 146 L372 126" stroke-width="7"/>
+      <path d="M782 146 L828 126" stroke-width="7"/>
 
-    <!-- Puente -->
-    <path d="M322 165 Q400 142 478 165" stroke-width="10"/>
+      <!-- reflejos -->
+      <path d="M438 126 Q455 116 477 118" stroke="#ffffff" stroke-width="5" opacity="0.45"/>
+      <path d="M698 126 Q715 116 737 118" stroke="#ffffff" stroke-width="5" opacity="0.45"/>
+    </g>
 
-    <!-- Patillas -->
-    <path d="M178 152 L118 128" stroke-width="8"/>
-    <path d="M622 152 L682 128" stroke-width="8"/>
+    <!-- sombra interior -->
+    <ellipse cx="470" cy="160" rx="42" ry="34" fill="#000000" opacity="0.08"/>
+    <ellipse cx="730" cy="160" rx="42" ry="34" fill="#000000" opacity="0.08"/>
 
-    <!-- Reflejos -->
-    <path d="M214 128 Q235 110 260 114" stroke="#ffffff" stroke-width="6" opacity="0.45"/>
-    <path d="M514 128 Q535 110 560 114" stroke="#ffffff" stroke-width="6" opacity="0.45"/>
-
-    <!-- Detalle interior sutil -->
-    <circle cx="250" cy="165" r="58" stroke="#2c2c2c" stroke-width="2" opacity="0.18"/>
-    <circle cx="550" cy="165" r="58" stroke="#2c2c2c" stroke-width="2" opacity="0.18"/>
+    <!-- cicatriz -->
+    <g filter="url(#softGlow)">
+      <path d="M585 70 L612 114 L580 114 L628 184"
+            fill="none"
+            stroke="url(#scarGradient)"
+            stroke-width="12"
+            stroke-linejoin="round"
+            stroke-linecap="round">
+        <animate attributeName="stroke-width" values="12;14;12" dur="2.6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M585 70 L612 114 L580 114 L628 184"
+            fill="none"
+            stroke="#fff7be"
+            stroke-width="3"
+            opacity="0.75"
+            stroke-linejoin="round"
+            stroke-linecap="round">
+        <animate attributeName="opacity" values="0.4;0.95;0.4" dur="2.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
   </g>
 
   <!-- Varita -->
-  <g transform="rotate(-14 610 225)" filter="url(#shadow)">
-    <rect x="520" y="214" width="190" height="14" rx="7" fill="url(#wandGradient)"/>
-    <rect x="512" y="212" width="18" height="18" rx="4" fill="#d9a66a"/>
-    <rect x="700" y="216" width="8" height="10" rx="2" fill="#2f1c14" opacity="0.65"/>
+  <g transform="rotate(-15 880 220)" filter="url(#shadow)">
+    <animateTransform attributeName="transform"
+      type="rotate"
+      values="-15 880 220; -11 880 220; -15 880 220; -18 880 220; -15 880 220"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+    <rect x="800" y="212" width="145" height="12" rx="6" fill="url(#wandGradient)"/>
+    <rect x="793" y="210" width="14" height="16" rx="3" fill="#d6a56d"/>
   </g>
 
-  <!-- Estela mágica de la varita -->
+  <!-- Estela mágica -->
   <g filter="url(#softGlow)">
-    <path d="M590 210 C630 180, 675 165, 735 160"
+    <path d="M790 190 C845 150, 910 138, 1000 150 C1065 160, 1110 145, 1150 130"
           fill="none"
           stroke="#ffd95a"
-          stroke-width="5"
+          stroke-width="4.5"
           stroke-linecap="round"
-          opacity="0.85"
-          stroke-dasharray="2 10"/>
-    <use href="#spark" x="726" y="148" width="18" height="18"/>
-    <use href="#spark" x="684" y="162" width="12" height="12" opacity="0.85"/>
-    <use href="#spark" x="648" y="177" width="10" height="10" opacity="0.75"/>
+          stroke-dasharray="3 11"
+          opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="0;-70" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.9;0.45" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- partículas moviéndose -->
+    <circle r="4" fill="#ffe17b">
+      <animateMotion dur="2.2s" repeatCount="indefinite">
+        <mpath href="#magicPath"/>
+      </animateMotion>
+    </circle>
+
+    <circle r="3" fill="#fff2b0">
+      <animateMotion dur="2.8s" begin="0.4s" repeatCount="indefinite">
+        <mpath href="#magicPath"/>
+      </animateMotion>
+    </circle>
+
+    <circle r="2.8" fill="#ffd95a">
+      <animateMotion dur="3.1s" begin="0.9s" repeatCount="indefinite">
+        <mpath href="#magicPath"/>
+      </animateMotion>
+    </circle>
+
+    <use href="#spark" x="1120" y="118" width="22" height="22">
+      <animateTransform attributeName="transform"
+        type="rotate"
+        values="0 1131 129;360 1131 129"
+        dur="4s"
+        repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="2s" repeatCount="indefinite"/>
+    </use>
+
+    <use href="#spark" x="1062" y="140" width="12" height="12" opacity="0.8">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.8s" repeatCount="indefinite"/>
+    </use>
   </g>
+
+  <!-- Estrellas pequeñas -->
+  <g filter="url(#softGlow)">
+    <circle cx="400" cy="92" r="2.5" fill="#ffe27a">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="442" cy="80" r="1.8" fill="#fff2aa">
+      <animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="98" r="2.1" fill="#ffe27a">
+      <animate attributeName="opacity" values="0.15;1;0.15" dur="1.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="812" cy="116" r="1.7" fill="#fff2aa">
+      <animate attributeName="opacity" values="0.3;0.85;0.3" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Terminal -->
+  <g filter="url(#shadow)">
+    <rect x="235" y="255" width="730" height="110" rx="18" fill="#0b1220" opacity="0.92" stroke="#1d2a44" stroke-width="2"/>
+    <rect x="235" y="255" width="730" height="30" rx="18" fill="#10192d"/>
+    <circle cx="262" cy="270" r="5" fill="#ff5f56"/>
+    <circle cx="280" cy="270" r="5" fill="#ffbd2e"/>
+    <circle cx="298" cy="270" r="5" fill="#27c93f"/>
+
+    <text x="330" y="274" fill="#9bb0d3" font-size="15" font-family="monospace">wizard-terminal</text>
+
+    <text x="270" y="315" fill="#8affc1" font-size="24" font-family="monospace">$ const wizard = "Oscar Guevara";</text>
+    <text x="270" y="345" fill="#61dafb" font-size="21" font-family="monospace">&gt; building magic with code</text>
+
+    <!-- cursor -->
+    <rect x="665" y="328" width="10" height="22" fill="#8affc1">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+ 
 </svg>
