@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="ilustracion.svg" alt="Ilustración de perfil de Oscar Guevara" width="750"/>
+  <img src="ilustracion.svg" alt="Ilustración de perfil de Oscar Guevara" width="800"/>
 </p>
 
 <h1 align="center">Hola! 👋 Soy Oscar Guevara</h1>
