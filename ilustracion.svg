@@ -1,3 +1,7 @@
+
+
+
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
   <!-- fondo transparente -->
   <rect width="100%" height="100%" fill="transparent"/>
@@ -21,3 +25,157 @@
     <rect x="235" y="149" width="10" height="12" rx="2" fill="#b8864b"/>
   </g>
 </svg>
+
+Mejorame este svg porfavor esta ambientado para que sea como una imagen de mi .md de mi git y es de harryu potter arreglalo o hazlo un poco mas llamativa 
+
+Thought for 15s
+Sí, te lo mejoré para que se vea más elegante, mágico y llamativo para un README.md de GitHub, manteniendo el estilo de gafas + cicatriz + varita, pero con:
+
+brillos mágicos
+
+degradados
+
+reflejos en las gafas
+
+estrellas decorativas
+
+un efecto más limpio y “pro”
+
+Usa este SVG:
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <!-- Degradados -->
+    <linearGradient id="scarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe86b"/>
+      <stop offset="50%" stop-color="#f7c62f"/>
+      <stop offset="100%" stop-color="#ff8f1f"/>
+    </linearGradient>
+
+    <linearGradient id="wandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b77a45"/>
+      <stop offset="50%" stop-color="#6f472d"/>
+      <stop offset="100%" stop-color="#3f2619"/>
+    </linearGradient>
+
+    <radialGradient id="magicGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3b0" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#f7d117" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#f7d117" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Filtros -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+
+    <!-- Estrella -->
+    <symbol id="spark" viewBox="-20 -20 40 40">
+      <path d="M0,-14 L3,-3 L14,0 L3,3 L0,14 L-3,3 L-14,0 L-3,-3 Z"
+            fill="#ffd95a" opacity="0.95"/>
+    </symbol>
+  </defs>
+
+  <!-- Fondo transparente -->
+  <rect width="100%" height="100%" fill="transparent"/>
+
+  <!-- Neblina mágica suave -->
+  <ellipse cx="400" cy="155" rx="230" ry="80" fill="url(#magicGlow)" opacity="0.35"/>
+  <ellipse cx="620" cy="210" rx="120" ry="55" fill="url(#magicGlow)" opacity="0.22"/>
+
+  <!-- Chispas mágicas -->
+  <g filter="url(#softGlow)">
+    <use href="#spark" x="110" y="55" width="18" height="18"/>
+    <use href="#spark" x="175" y="38" width="12" height="12" opacity="0.7"/>
+    <use href="#spark" x="640" y="72" width="16" height="16"/>
+    <use href="#spark" x="705" y="110" width="10" height="10" opacity="0.75"/>
+    <use href="#spark" x="595" y="222" width="14" height="14"/>
+    <circle cx="150" cy="210" r="3" fill="#ffe27a"/>
+    <circle cx="668" cy="188" r="2.8" fill="#ffe27a"/>
+    <circle cx="246" cy="72" r="2.5" fill="#fff2aa"/>
+    <circle cx="565" cy="96" r="2.5" fill="#fff2aa"/>
+  </g>
+
+  <!-- Cicatriz -->
+  <g filter="url(#softGlow)">
+    <path d="M392 42 L425 98 L390 98 L446 178"
+          fill="none"
+          stroke="url(#scarGradient)"
+          stroke-width="14"
+          stroke-linejoin="round"
+          stroke-linecap="round"/>
+    <path d="M392 42 L425 98 L390 98 L446 178"
+          fill="none"
+          stroke="#fff1a8"
+          stroke-width="4"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+          opacity="0.65"/>
+  </g>
+
+  <!-- Gafas -->
+  <g filter="url(#shadow)" stroke="#111111" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cristales -->
+    <circle cx="250" cy="165" r="72" stroke-width="10"/>
+    <circle cx="550" cy="165" r="72" stroke-width="10"/>
+
+    <!-- Puente -->
+    <path d="M322 165 Q400 142 478 165" stroke-width="10"/>
+
+    <!-- Patillas -->
+    <path d="M178 152 L118 128" stroke-width="8"/>
+    <path d="M622 152 L682 128" stroke-width="8"/>
+
+    <!-- Reflejos -->
+    <path d="M214 128 Q235 110 260 114" stroke="#ffffff" stroke-width="6" opacity="0.45"/>
+    <path d="M514 128 Q535 110 560 114" stroke="#ffffff" stroke-width="6" opacity="0.45"/>
+
+    <!-- Detalle interior sutil -->
+    <circle cx="250" cy="165" r="58" stroke="#2c2c2c" stroke-width="2" opacity="0.18"/>
+    <circle cx="550" cy="165" r="58" stroke="#2c2c2c" stroke-width="2" opacity="0.18"/>
+  </g>
+
+  <!-- Varita -->
+  <g transform="rotate(-14 610 225)" filter="url(#shadow)">
+    <rect x="520" y="214" width="190" height="14" rx="7" fill="url(#wandGradient)"/>
+    <rect x="512" y="212" width="18" height="18" rx="4" fill="#d9a66a"/>
+    <rect x="700" y="216" width="8" height="10" rx="2" fill="#2f1c14" opacity="0.65"/>
+  </g>
+
+  <!-- Estela mágica de la varita -->
+  <g filter="url(#softGlow)">
+    <path d="M590 210 C630 180, 675 165, 735 160"
+          fill="none"
+          stroke="#ffd95a"
+          stroke-width="5"
+          stroke-linecap="round"
+          opacity="0.85"
+          stroke-dasharray="2 10"/>
+    <use href="#spark" x="726" y="148" width="18" height="18"/>
+    <use href="#spark" x="684" y="162" width="12" height="12" opacity="0.85"/>
+    <use href="#spark" x="648" y="177" width="10" height="10" opacity="0.75"/>
+  </g>
+</svg>
+Si lo vas a poner en tu README.md, te recomiendo guardarlo como por ejemplo:
+
+assets/harry-potter-banner.svg
+Y luego llamarlo así en tu markdown:
+
+<p align="center">
+  <img src="assets/harry-potter-banner.svg" alt="Harry Potter Style Banner" width="700"/>
+</p>
+También te puedo hacer una versión más minimalista, una más oscura tipo Hogwarts, o una con tu nombre integrado dentro del SVG.
+
+
+
+
+
+
