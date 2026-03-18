@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="ilustracion.svg" alt="Ilustración de perfil de Oscar Guevara" width="1400"/>
+  <img src="ilustracion.svg" alt="Ilustración de perfil de Mauricio Guevara" width="1400"/>
 </p>
 
-<h1 align="center">Hola! 👋 Soy Oscar Guevara</h1>
+<h1 align="center">Hola! 👋 Soy Mauricio Guevara</h1>
 <h3 align="center">Estudiante de Ing. de Software | Desarrollador Frontend | Entusiasta UX/UI</h3>
 
 <br>
