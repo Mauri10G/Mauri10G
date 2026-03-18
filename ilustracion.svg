@@ -226,7 +226,7 @@
 
     <text x="330" y="274" fill="#9bb0d3" font-size="15" font-family="monospace">wizard-terminal</text>
 
-    <text x="270" y="315" fill="#8affc1" font-size="24" font-family="monospace">$ const wizard = "Oscar Guevara";</text>
+    <text x="270" y="315" fill="#8affc1" font-size="24" font-family="monospace">$ const wizard = "Mauricio Guevara";</text>
     <text x="270" y="345" fill="#61dafb" font-size="21" font-family="monospace">&gt; building magic with code</text>
 
     <!-- cursor -->
